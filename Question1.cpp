@@ -12,7 +12,7 @@ std::string reverse_words(const std::string &str) {
             if (start == -1) start = i;
         } else {
             if (start != -1) {
-                // Reverse the word from 'start' to 'i-1'
+                //Reverse the word from 'start' to 'i-1'
                 int left = start, right = i - 1;
                 while (left < right) {
                     std::swap(result[left], result[right]);
@@ -29,6 +29,6 @@ std::string reverse_words(const std::string &str) {
 int main() {
     std::string test_str = "String; 2be reversed...";
     assert(reverse_words(test_str) == "gnirtS; eb2 desrever...");
-    std::cout << "All tests passed!\n";
+    std::cout << "Task completed\n";
     return 0;
 }
